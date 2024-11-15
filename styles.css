@@ -1,5 +1,10 @@
 body {
-    font-family: Jacquard 12, Arial, sans-serif;
+    @font-face {
+  font-family: "Pixelated Elegance";
+  src:
+    local("Pixelated Elegance"),
+    url("PixelatedElegance.ttf") format("TrueType"),
+}
 }
 
 header {
