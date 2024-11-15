@@ -1,10 +1,5 @@
 body {
-    @font-face {
-  font-family: "Pixelated Elegance";
-  src:
-    local("Pixelated Elegance"),
-    url("PixelatedElegance.ttf") format("TrueType"),
-}
+    font-family: Arial, sans-serif;
 }
 
 header {
