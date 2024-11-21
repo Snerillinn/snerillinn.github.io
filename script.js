@@ -32,3 +32,32 @@ sendButton.addEventListener('click', (e) => {
         emailInput.value = '';
     }
 });
+
+// change language button
+function switchLanguage() {
+  const currentLang = getCookie('lang');
+  if (currentLang === 'en') {
+    setCookie('lang', 'is'); // switch back to Icelandic
+  } else {
+    setCookie('lang', 'en'); // switch to English
+  }
+  location.reload();
+}
+
+function getCookie(name) {
+  const cookies = document.cookie.split(';');
+  for (const cookie of cookies) {
+    if (cookie.startsWith(name + '=')) {
+      return cookie.substring(name.length + 1).trim();
+    }
+  }
+  return null;
+}
+
+function setCookie(name, value, days) {
+  const expires = new Date();
+  if (days) {
+    expires.setDate(expires.getDate() + days);
+  }
+  document.cookie = `${name}=${value};expires=${expires.toUTCString()}`;
+}
