@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #333;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     padding: 20px;
     text-align: center;
@@ -40,11 +40,16 @@ section {
 
 h1, h2 {
     color: #333;
-    font-size: 40px;
+    font-size: 35px;
+}
+
+h3 {
+    color: #333;
+    font-size: 28px;
 }
 
 p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 img {
@@ -58,4 +63,12 @@ footer {
     padding: 10px;
     text-align: center;
     font-family: Tiny5, sans-serif;
+}
+
+article {
+    font-size: 40px;
+}
+
+ul, li {
+    font-size: 30px;
 }
